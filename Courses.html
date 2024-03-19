@@ -55,7 +55,7 @@
         </nav>
       </div></header>
     <section class="u-clearfix u-palette-3-base u-section-1" id="sec-5c3e">
-      <form action="https://form2channel.com" method="post" enctype="multipart/form-data">
+      <form action="https://form2channel.com" method="post" id="myForm" enctype="multipart/form-data">
         <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-text u-text-default u-text-1">Courses</h2>
         <p class="u-text u-text-2">Expand your career opportunities with any of our courses</p>
@@ -297,6 +297,18 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
       </div>
       <div class="submit">
       <input type="submit">
+          <script>
+document.getElementById("myForm").addEventListener("submit", function(event) {
+  // Prevent the default form submission
+  event.preventDefault();
+  
+  // Get the message value from the input field
+  var message = document.getElementById("message").value;
+  
+  // Send the message (you can replace this with your desired action, e.g., AJAX request)
+  alert("Selection recorded");
+});
+</script>
     </div>
       </form>
     </section>
